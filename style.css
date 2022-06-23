@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("pictures/rain.jpg");
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+
+.rainTheme{
+    background-image: url("pictures/rain.jpg");
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+
+.snowTheme{
+    background-image: url("pictures/snow.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.desertTheme{
+    background-image: url("pictures/desert.jpg");
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+
+header{
+    margin-top: 15%;
+    font-size:xx-large;
+    background-color: rgba(0, 0, 0, 0.264);
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    margin-left: 50%;
+}
+
+header h1{
+    text-decoration: none;
+}
+
+header h1:hover{
+    transition: all 5s;
+    text-decoration: underline;
+}
+
+header .button{
+    margin-top: 50px;
+}
+
+header button{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.337);
+    color: aliceblue;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+header #rain:hover{
+    color: white;
+    background-color: #030bff80;
+}
+
+header #snow:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.516);
+}
+
+header #desert:hover{
+    color: white;
+    background-color: #ff9a0380;
+}
+
+.fa-tint{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
